@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aydinserhatseyitoglu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #111;
+            padding: 20px;
+            position: relative;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .sidebar ul li a:hover {
+            color: #77d42a;
+        }
+        .main {
+            flex-grow: 1;
+            background: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #77d42a;
+            margin: 0 auto;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-header h1 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+            background-color: #ddd;
+            padding: 5px;
+        }
+        .profile-header p {
+            margin: 5px 0;
+        }
+        .profile-contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .profile-contact p {
+            margin: 0 10px;
+        }
+        .content .section {
+            margin-bottom: 20px;
+        }
+        .content .section h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .content .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content .section ul li {
+            margin-bottom: 10px;
+        }
+        .language-selector {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .language-selector button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #77d42a;
+            color: #fff;
+            cursor: pointer;
+        }
+        .sidebar .social-links {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .sidebar .social-links a {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .sidebar .social-links a:hover {
+            color: #77d42a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1 id="name">Aydın Serhat</h1>
+            <ul>
+                <li><a href="#intro" id="intro-link">Intro</a></li>
+                <li><a href="#education" id="education-link">Education</a></li>
+                <li><a href="#work" id="work-link">Work Experience</a></li>
+                <li><a href="#skills" id="skills-link">Skills</a></li>
+                <li><a href="#interests" id="interests-link">Interests</a></li>
+                <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+                <li><a href="https://medium.com/@aydinserhatseyitoglu" target="_blank">Blog</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/aydinserhat" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aydinserhatseyitoglu" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="language-selector">
+                <button onclick="setLanguage('en')">English</button>
+                <button onclick="setLanguage('tr')">Türkçe</button>
+            </div>
+            <div class="profile-header">
+                <div class="profile-pic">
+                    <img src="photo.jpg" alt="Aydın Serhat Seyitoğlu">
+                </div>
+                <h1 id="profile-name">Aydın Serhat Seyitoğlu</h1>
+                <h2 id="profile-job">Computer Engineering & Cyber Security Researcher</h2>
+                <div class="profile-contact">
+                    <p id="profile-email">Email: aydinserhatseyitoglu@gmail.com</p>
+                    <p id="profile-phone">Phone: (530) 544-5126</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="section" id="intro">
+                    <h2 id="intro-title">Professional Summary</h2>
+                    <p id="intro-description">I am continuing my career in the cybersecurity department, specializing in web security. I am actively taking online courses from educational platforms such as Harvard University and TryHackMe. I am also a student at the Cyber Homeland institution, where I continue my education and actively contribute to the learning process. In addition to the English language courses I have taken to improve my language skills, I continue my education through various courses and online platforms.</p>
+                </div>
+                <div class="section" id="education">
+                    <h2 id="education-title">Education</h2>
+                    <ul id="education-list">
+                        <li>
+                            <strong>Computer Engineering</strong> - Bülent Ecevit University (2020 - 2024)
+                        </li>
+                    </ul>
+                </div>
+                <div class="section" id="work">
+                    <h2 id="work-title">Work Experience</h2>
+                    <ul id="work-list">
+                        <li>
+                            <strong>Intern</strong> - C-Tech  (July 2022 - August 2022)
+                            <br>Projects were developed on cryptography. Research was conducted. A simple encryption application was coded.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section" id="skills">
+                    <h2 id="skills-title">Skills</h2>
+                    <ul id="skills-list">
+                        <li>Python </li>
+                        <li>Go-Lang</li>
+                        <li>Linux</li>
+                        <li>Web Security - Network Security</li>
+                        <li>SQL</li>
+                        <li>Version Control (Git)</li>
+                    </ul>
+                </div>
+                <div class="section" id="interests">
+                    <h2 id="interests-title">Interests</h2>
+                    <ul id="interests-list">
+                        <li>Basketball</li>
+                        <li>Photography</li>
+                        <li>Theatre</li>
+                    </ul>
+                </div>
+                <div class="section" id="portfolio">
+                    <h2 id="portfolio-title">Portfolio</h2>
+                    <p id="portfolio-description"></p>
+                    <ul id="portfolio-list">
+                        <li><b>BeuCHAT</b></li>
+                        <p>"We are developing a mobile application that allows university students to communicate and hold discussions among themselves. Within the project, there will be chat rooms where students can find friends based on their hobbies, and in project rooms, they can share ideas to generate new projects. Thanks to its hierarchical structure, instructors will be able to easily reach students and share announcements.</p>
+                        <li><b>MikroPC</b></li>
+                        <p>We created a mini computer for students. This project uses a compact case and a Raspberry Pi 4</p>
+                    </ul>
+                </div>
+                <div class="section" id="contact">
+                    <h2 id="contact-title">Contact</h2>
+                    <p id="contact-description">You can reach me via email at aydinserhatseyitoglu@gmail.com or phone at (530) 544-5126.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(language) {
+            if (language === 'en') {
+                document.getElementById('name').innerText = 'John Doe';
+                document.getElementById('intro-link').innerText = 'Intro';
+                document.getElementById('education-link').innerText = 'Education';
+                document.getElementById('work-link').innerText = 'Work Experience';
+                document.getElementById('skills-link').innerText = 'Skills';
+                document.getElementById('interests-link').innerText = 'Interests';
+                document.getElementById('portfolio-link').innerText = 'Portfolio';
+                document.getElementById('contact-link').innerText = 'Contact';
+                document.getElementById('intro-title').innerText = 'Professional Summary';
+                document.getElementById('intro-description').innerText = 'I am continuing my career in the cybersecurity department, specializing in web security. I am actively taking online courses from educational platforms such as Harvard University and TryHackMe. I am also a student at the Cyber Homeland institution, where I continue my education and actively contribute to the learning process. In addition to the English language courses I have taken to improve my language skills, I continue my education through various courses and online platforms.';
+                document.getElementById('education-title').innerText = 'Education';
+                document.getElementById('education-list').innerHTML = '<li><strong>Computer Engineering</strong> - Bülent Ecevit University (2020 - 2024)</li>';
+                document.getElementById('work-title').innerText = 'Work Experience';
+                document.getElementById('work-list').innerHTML = '<li><strong>Intern</strong> - C-Tech  (July 2022 - August 2022)<br>Projects were developed on cryptography. Research was conducted. A simple encryption application was coded.</li>';
+                document.getElementById('skills-title').innerText = 'Skills';
+                document.getElementById('skills-list').innerHTML = '<li>Python</li><li>Go-Lang</li><li>Linux</li><li>Web Security - Network Security</li><li>SQL</li><li>Version Control (Git)</li>';
+                document.getElementById('interests-title').innerText = 'Interests';
+                document.getElementById('interests-list').innerHTML = '<li>Basketball</li><li>Photography</li><li>Theatre</li>';
+                document.getElementById('portfolio-title').innerText = 'Portfolio';
+                document.getElementById('portfolio-description').innerText = 'Links to some of my recent projects:';
+                document.getElementById('portfolio-list').innerHTML = '<li><b>BeuCHAT</b></li><p>"We are developing a mobile application that allows university students to communicate and hold discussions among themselves. Within the project, there will be chat rooms where students can find friends based on their hobbies, and in project rooms, they can share ideas to generate new projects. Thanks to its hierarchical structure, instructors will be able to easily reach students and share announcements.</p><li><b>MikroPC</b></li><p>We created a mini computer for students. This project uses a compact case and a Raspberry Pi 4</p>';
+                document.getElementById('contact-title').innerText = 'Contact';
+                document.getElementById('contact-description').innerText = 'You can reach me via email at aydinserhatseyitoglu@gmail.com or phone at (530) 544-5126.';
+            } else if (language === 'tr') {
+                document.getElementById('name').innerText = 'Aydın Serhat Seyitoğlu';
+                document.getElementById('intro-link').innerText = 'Giriş';
+                document.getElementById('education-link').innerText = 'Eğitim';
+                document.getElementById('work-link').innerText = 'İş Deneyimi';
+                document.getElementById('skills-link').innerText = 'Beceriler';
+                document.getElementById('interests-link').innerText = 'İlgi Alanları';
+                document.getElementById('portfolio-link').innerText = 'Portfolyo';
+                document.getElementById('contact-link').innerText = 'İletişim';
+                document.getElementById('intro-title').innerText = 'Profesyonel Özgeçmiş';
+                document.getElementById('intro-description').innerText = 'Siber güvenlik departmanında kariyerime devam ediyorum ve özellikle web güvenliği üzerine uzmanlaşıyorum. Harvard Üniversitesi ve TryHackMe gibi eğitim platformlarından aktif olarak online dersler alıyorum. Ayrıca Cyber Homeland kurumunda öğrenciyim, burada eğitimime devam ediyor ve öğrenme sürecine aktif olarak katkıda bulunuyorum. Dil becerilerimi geliştirmek için aldığım İngilizce dil kurslarına ek olarak, çeşitli kurslar ve online platformlar aracılığıyla eğitimime devam ediyorum.';
+                document.getElementById('education-title').innerText = 'Eğitim';
+                document.getElementById('education-list').innerHTML = '<li><strong>Bilgisayar Mühendisliği</strong> - Bülent Ecevit Üniversitesi (2020 - 2024)</li>';
+                document.getElementById('work-title').innerText = 'İş Deneyimi';
+                document.getElementById('work-list').innerHTML = '<li><strong>Stajyer</strong> - C-Tech (Temmuz 2022 - Ağustos 2022)<br>Kriptografi üzerine projeler geliştirildi. Araştırmalar yapıldı. Basit bir şifreleme uygulaması kodlandı.</li>';
+                document.getElementById('skills-title').innerText = 'Beceriler';
+                document.getElementById('skills-list').innerHTML = '<li>Python</li><li>Go-Lang</li><li>Linux</li><li>Web Güvenliği - Ağ Güvenliği</li><li>SQL</li><li>Sürüm Kontrol (Git)</li>';
+                document.getElementById('interests-title').innerText = 'İlgi Alanları';
+                document.getElementById('interests-list').innerHTML = '<li>Basketbol</li><li>Fotoğrafçılık</li><li>Tiyatro</li>';
+                document.getElementById('portfolio-title').innerText = 'Portfolyo';
+                document.getElementById('portfolio-description').innerText = 'Son projelerimden bazıları:';
+                document.getElementById('portfolio-list').innerHTML = '<li><b>BeuCHAT</b></li><p>"Üniversite öğrencilerinin kendi aralarında iletişim kurabilecekleri ve tartışmalar yapabilecekleri bir mobil uygulama geliştiriyoruz. Proje kapsamında öğrenciler, hobilerine göre arkadaş bulabilecekleri sohbet odaları ve proje odalarında fikirlerini paylaşarak yeni projeler üretebilecekler. Hiyerarşik yapısı sayesinde öğretim görevlileri öğrencilere kolayca ulaşabilecek ve duyurularını paylaşabilecekler.</p><li><b>MikroPC</b></li><p>Öğrenciler için mini bir bilgisayar oluşturduk. Bu proje kompakt bir kasa ve Raspberry Pi 4 kullanıyor</p>';
+                document.getElementById('contact-title').innerText = 'İletişim';
+                document.getElementById('contact-description').innerText = 'Bana aydinserhatseyitoglu@gmail.com e-posta adresinden veya (530) 544-5126 telefon numarasından ulaşabilirsiniz.';
+            }
+        }
+    </script>
+</body>
+</html>
